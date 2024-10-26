@@ -19,13 +19,18 @@ public class CrudApplication {
 		return args -> {
 			Course course1 = new Course();
 			course1.setName("Quarkus");
-			course1.setCategory("Backend");
+			course1.setCategory("back-end");
 			courseRepository.save(course1);
 
 			Course course2 = new Course();
 			course2.setName("Springazadaa2");
-			course2.setCategory("Backend");
+			course2.setCategory("back-end");
 			courseRepository.save(course2);
+
+			Course course3 = new Course();
+			course3.setName("Angulinha");
+			course3.setCategory("front-end");
+			courseRepository.save(course3);
 		};
 	}
 
